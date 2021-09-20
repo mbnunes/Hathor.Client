@@ -25,6 +25,9 @@ namespace Hathor
         [Get("thin_wallet/address_balance")]
         Task<BalanceForAddressResponse> GetBalanceForAddress([Query] string address);
 
+        [Get("thin_wallet/address_history")]
+        Task<AddressesHistoryResponse> GetAddressesHistory([Query] string addresses);
+
         [Get("thin_wallet/token")]
         Task<TokenDataResponse> TokenData([Query] string id);
 

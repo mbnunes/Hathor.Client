@@ -22,7 +22,7 @@ namespace Hathor.Models.Responses
         public int? TotalUtxosLocked { get; set; }
 
         [JsonProperty("utxos")]
-        public List<Utxo> Utxos { get; set; } = new();
+        public List<Utxo>? Utxos { get; set; }
     }
 
     public class Utxo

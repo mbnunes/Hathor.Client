@@ -80,13 +80,13 @@ namespace Hathor.Models.Node.Responses
         public bool IsVoided { get; set; }
 
         [JsonProperty("inputs")]
-        public List<Input> Inputs { get; set; } = new();
+        public List<Input>? Inputs { get; set; }
 
         [JsonProperty("outputs")]
-        public List<Output> Outputs { get; set; } = new();
+        public List<Output>? Outputs { get; set; }
 
         [JsonProperty("parents")]
-        public List<string> Parents { get; set; } = new();
+        public List<string>? Parents { get; set; }
     }
 
     public class TokenHistoryResponse

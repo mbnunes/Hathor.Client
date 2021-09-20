@@ -22,6 +22,6 @@ namespace Hathor.Models.Responses
         public int TotalAmount { get; set; }
 
         [JsonProperty("utxos")]
-        public List<Utxo> Utxos { get; set; } = new();
+        public List<Utxo>? Utxos { get; set; }
     }
 }

@@ -10,7 +10,7 @@ namespace Hathor.Models.Requests
 {
     public class StartRequest
     {
-        [Required]
+//        [Required]
         [JsonProperty(PropertyName = "wallet-id")]
         public string WalletId { get; set; }
 
@@ -24,7 +24,7 @@ namespace Hathor.Models.Requests
         /// Key of the corresponding seed in the config file to create the wallet.
         /// </summary>
         [JsonProperty(PropertyName = "seedKey")]
-        [Required]
+//        [Required]
         public string SeedKey { get; set; }
 
         public StartRequest(string walletId, string seedKey = "default", string? passphrase = null)

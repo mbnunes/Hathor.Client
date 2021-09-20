@@ -1,8 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+   
+	  <TargetFramework>net45</TargetFramework>
     <Nullable>enable</Nullable>
+    <LangVersion>preview</LangVersion>
     <WarningsAsErrors>nullable;CS8600;CS8601;CS8602;CS8603;CS8625;CS8613;CS8610</WarningsAsErrors>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Version>1.2.0</Version>

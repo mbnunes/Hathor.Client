@@ -64,7 +64,7 @@ namespace Hathor.Models.Node.Responses
         public string Hash { get; set; } = default!;
 
         [JsonProperty("children")]
-        public List<string> Children { get; set; } = new();
+        public List<string>? Children { get; set; }
 
         [JsonProperty("accumulated_weight")]
         public double AccumulatedWeight { get; set; }
@@ -94,6 +94,6 @@ namespace Hathor.Models.Node.Responses
         public Meta? Meta { get; set; }
 
         [JsonProperty("spent_outputs")]
-        public Dictionary<string, string> SpentOutputs { get; set; } = new();
+        public Dictionary<string, string>? SpentOutputs { get; set; }
     }
 }
